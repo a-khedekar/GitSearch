@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Github Repos</h1>
+        <h5>Please provide your github username to fetch your public repos</h2>
+        <div class="inner-container">
+          <input type="text" placeholder="your username here.." class="username" />
+          <button id="fetch-btn">Fetch</button>
+        </div>
+    </div>
+    <div class="table-style">
+      <p class="error-msg">No such username exist. Please verify your username.</p>
+      <input type="text" class="table-filter" data-table="order-table" placeholder="Item to filter.." />
+        <table id="data-table" class="order-table table" >
+            <thead>
+              <tr>
+                <th>Owner <span class="arrow">&#9650;&#9660;</span></th>
+                <th>Name<span class="arrow">&#9650;&#9660;</span></th>
+                <th>Description<span class="arrow">&#9650;&#9660;</span></th>
+                <th>Stars<span class="arrow">&#9650;&#9660;</span></th>
+                <th>Open issue count<span class="arrow">&#9650;&#9660;</span></th>
+                <th>Watchers<span class="arrow">&#9650;&#9660;</span></th>
+              </tr>
+            </thead>
+        
+            <tbody class="table-body">
+            </tbody>
+        </table>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

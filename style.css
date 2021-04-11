@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 450px;
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 2%;
+    padding: 20px;
+    background-color: #FAB6B6;
+}
+
+.inner-container {
+    margin: auto;
+    display: flex;
+    width: 450px;
+    align-items: baseline;
+}
+
+#fetch-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.username {
+    width: 100%;
+    margin-right: 5px;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.table-filter {
+    min-width: 200px;
+    font-size: 16px;
+    padding: 4px;
+    display: none;
+}
+
+.userimage {
+    border-radius: 50%;
+    max-width: 30px;
+}
+
+.order-table {
+    display: none;
+}
+
+.firstCell {
+    display: flex;
+    align-items: center;
+}
+
+.table-style{
+    padding-top: 50px;
+    margin: auto;
+    display: table;
+}
+
+.order-table td, .order-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.order-table th {
+    text-align: center;
+    background-color: #F5606D;
+    color: #000;
+    padding: 12px;
+    min-width: 100px;
+}
+
+.order-table th:hover {
+    background-color: #FAB6B6;
+}
+
+.arrow {
+    font-size: 12px;
+}
+
+.error-msg {
+    text-align: center;
+    display: none;
+}
