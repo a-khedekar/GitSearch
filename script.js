@@ -10,7 +10,7 @@ function getRepos() {
         .then(function(response) {
             if(response.status == 404) {
                 error.style.display = "block";
-                let table = document.querySelector("#data-table");
+                let table = document.querySelector("#repo-table");
                 let filterInput = document.querySelector(".table-filter")
                 table.style.display = "none";
                 filterInput.style.display = "none";
@@ -22,7 +22,7 @@ function getRepos() {
         .then(function(result) {
             if(result.length !== 0 && result.message!=="Not Found"){
                 appendTableRows(result);
-                let table = document.querySelector("#data-table");
+                let table = document.querySelector("#repo-table");
                 makeSortable(table);
             }
         })
@@ -31,7 +31,7 @@ function getRepos() {
         });
     } else {
         error.style.display = "block";
-        let table = document.querySelector("#data-table");
+        let table = document.querySelector("#repo-table");
         let filterInput = document.querySelector(".table-filter")
         table.style.display = "none";
         filterInput.style.display = "none";
@@ -39,7 +39,7 @@ function getRepos() {
 };
 
 function appendTableRows(apidata) {
-    let table = document.querySelector("#data-table");
+    let table = document.querySelector("#repo-table");
     let filterInput = document.querySelector(".table-filter")
     let tableBody = document.querySelector(".table-body");
     tableBody.remove();
